@@ -1,8 +1,6 @@
 FROM heroku/cedar:14
 
-RUN mkdir -p /app/user && \
-    mkdir -p /app/.cache/gotools && \
-    mkdir -p /app/.profile.d
+RUN mkdir -p /app/user /app/.cache/go
 
 WORKDIR /app/user
 
