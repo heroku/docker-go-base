@@ -9,4 +9,5 @@ You can see all of the tags [here](https://hub.docker.com/r/heroku/go-base/tags/
 The `latest` tag will generally refer to the latest, possibly unsupported,
 release of [Go](https://golang.org/dl), including betas and release candidates.
 
-Once a final version is cut a separate tag will be used and updated.
+There is one tag per major version of go (1.4, 1.5, 1.6, etc).
+These will be updated to the latest version as new versions of that major series are released.
