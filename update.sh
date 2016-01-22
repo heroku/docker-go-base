@@ -12,6 +12,7 @@ echo "${versions[@]}"
 for version in "${versions[@]}"; do
    (
 		 set -x
-		 < Dockerfile sed -E 's/^(ENV GOVERSION) .*/\1 go'"$version"'/' > $version/Dockerfile
+     ev=$(< $version/current_version)
+		 < Dockerfile sed -E 's/^(ENV GOVERSION) .*/\1 go'"$ev"'/' > $version/Dockerfile
   )
 done
